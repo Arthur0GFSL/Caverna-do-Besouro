@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caverna do Besouro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <h1>🪲 CAVERNA DO BESOURO</h1>
+            <p>Explore a caverna e sobreviva às raízes!</p>
+        </header>
+
+        <section class="game-area">
+
+            <canvas id="gameCanvas"></canvas>
+
+            <div class="score-board">
+                <div>
+                    <span>PONTOS</span>
+                    <strong id="score">0</strong>
+                </div>
+
+                <div>
+                    <span>RECORDE</span>
+                    <strong id="bestScore">0</strong>
+                </div>
+            </div>
+
+            <div id="startScreen" class="overlay">
+                <h2>🪲 O BESOURO PERDIDO</h2>
+                <p>Ajude o pequeno besouro a atravessar a caverna!</p>
+                <button id="startButton">COMEÇAR JOGO</button>
+                <small>Clique, toque ou aperte ESPAÇO para voar.</small>
+            </div>
+
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>FIM DE JOGO!</h2>
+                <p>O besouro encontrou um obstáculo!</p>
+                <p class="final-score">Pontuação: <strong id="finalScore">0</strong></p>
+                <button id="restartButton">JOGAR NOVAMENTE</button>
+            </div>
+
+        </section>
+
+        <footer class="game-footer">
+            <p>CONTROLES: ESPAÇO | CLIQUE | TOQUE NA TELA</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
